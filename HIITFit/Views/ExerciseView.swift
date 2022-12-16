@@ -40,7 +40,24 @@ struct ExerciseView: View {
     let index: Int
     
     var body: some View {
-        Text(exerciseNames[index])
+        VStack {
+            VStack {
+                Text(exerciseNames[index])
+                    .font(.largeTitle)
+                HStack {
+                    Image(systemName: "01.circle")
+                    Image(systemName: "02.circle")
+                    Image(systemName: "03.circle")
+                    Image(systemName: "04.circle")
+                }
+                .font(.title2)
+            }
+            Text("Video Player")
+            Text("Timer")
+            Text("Start/Done button")
+            Text("Rating")
+            Text("History button")
+        }
     }
 }
 
