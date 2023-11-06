@@ -30,9 +30,13 @@ struct ExerciseView: View {
                 }
                 Text(Date().addingTimeInterval(interval), style: .timer)
                     .font(.system(size: geometry.size.height * 0.07))
-                Text("Start/Done button")
+                Button("Start/Done") { }
+                    .font(.title3)
+                    .padding()
                 Text("Rating")
-                Text("History Button")
+                Spacer()
+                Button("History") { }
+                    .padding(.bottom)
             }
         }
     }
