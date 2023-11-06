@@ -20,6 +20,7 @@
 		0F314F922AEC02A600FF0717 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F314F912AEC02A600FF0717 /* WelcomeView.swift */; };
 		0F314F942AEC02AD00FF0717 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F314F932AEC02AD00FF0717 /* ExerciseView.swift */; };
 		0F76B31A2AF92C900038DC06 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76B3192AF92C900038DC06 /* RatingView.swift */; };
+		0F76B31C2AF92DEA0038DC06 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76B31B2AF92DEA0038DC06 /* VideoPlayerView.swift */; };
 		0F7899152AF2954A00A9C05E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7899142AF2954A00A9C05E /* HeaderView.swift */; };
 		0F7899172AF2981200A9C05E /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7899162AF2981200A9C05E /* Exercise.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		0F314F912AEC02A600FF0717 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0F314F932AEC02AD00FF0717 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		0F76B3192AF92C900038DC06 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		0F76B31B2AF92DEA0038DC06 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		0F7899142AF2954A00A9C05E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		0F7899162AF2981200A9C05E /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				0F314F932AEC02AD00FF0717 /* ExerciseView.swift */,
 				0F7899142AF2954A00A9C05E /* HeaderView.swift */,
 				0F76B3192AF92C900038DC06 /* RatingView.swift */,
+				0F76B31B2AF92DEA0038DC06 /* VideoPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				0F314F772AEBF6C700FF0717 /* HIITFitApp.swift in Sources */,
 				0F314F872AEBF9F400FF0717 /* ImageExtension.swift in Sources */,
 				0F7899152AF2954A00A9C05E /* HeaderView.swift in Sources */,
+				0F76B31C2AF92DEA0038DC06 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
