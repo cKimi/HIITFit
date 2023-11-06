@@ -11,6 +11,7 @@ import AVKit
 struct ExerciseView: View {
     
     let index: Int
+    let interval: TimeInterval = 30
     var exercise: Exercise {
         Exercise.exercises[index]
     }
@@ -27,7 +28,8 @@ struct ExerciseView: View {
                     Text("Couldn't not find \(exercise.videoName).mp4")
                         .foregroundColor(.red)
                 }
-                Text("Timer")
+                Text(Date().addingTimeInterval(interval), style: .timer)
+                    .font(.system(size: geometry.size.height * 0.07))
                 Text("Start/Done button")
                 Text("Rating")
                 Text("History Button")
