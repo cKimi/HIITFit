@@ -10,10 +10,27 @@ import AVKit
 
 struct ExerciseView: View {
     
+    @Binding var selectedTab: Int
+    
     let index: Int
     let interval: TimeInterval = 30
+    
+    var startButton: some View {
+        Button("Start Exercise") { }
+    }
+    
+    var doneButton: some View {
+        Button("Done") {
+            selectedTab = lastExercise ? 9 : selectedTab + 1
+        }
+    }
+    
     var exercise: Exercise {
         Exercise.exercises[index]
+    }
+    
+    var lastExercise: Bool {
+        index + 1 == Exercise.exercises.count
     }
     
     var body: some View {
@@ -28,9 +45,12 @@ struct ExerciseView: View {
                 Text(Date().addingTimeInterval(interval), style: .timer)
                     .font(.system(size: geometry.size.height * 0.07))
                 
-                Button("Start/Done") { }
-                    .font(.title3)
-                    .padding()
+                HStack(spacing: 150) {
+                    startButton
+                    doneButton
+                }
+                .font(.title3)
+                .padding()
                 
                 RatingView()
                     .padding()
@@ -44,5 +64,5 @@ struct ExerciseView: View {
 }
 
 #Preview {
-    ExerciseView(index: 0)
+    ExerciseView(selectedTab: .constant(1), index: 1)
 }
