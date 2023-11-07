@@ -36,7 +36,7 @@ struct ExerciseView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                HeaderView(titleText: exercise.exerciseName)
+                HeaderView(selectedTab: $selectedTab, titleText: Exercise.exercises[index].exerciseName)
                     .padding(.bottom)
                 
                 VideoPlayerView(videoName: exercise.videoName)
