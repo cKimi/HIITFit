@@ -57,10 +57,6 @@ struct ExerciseView: View {
                 VideoPlayerView(videoName: exercise.videoName)
                     .frame(height: geometry.size.height * 0.45)
                 
-                if showTimer {
-                    TimerView(timerDone: $timerDone, size: geometry.size.height * 0.07)
-                }
-                
                 HStack(spacing: 150) {
                     startButton
                     doneButton
@@ -73,10 +69,14 @@ struct ExerciseView: View {
                 .font(.title3)
                 .padding()
                 
+                if showTimer {
+                    TimerView(timerDone: $timerDone, size: geometry.size.height * 0.07)
+                }
+                Spacer()
+                
                 RatingView(rating: $rating)
                     .padding()
                 
-                Spacer()
                 Button("History") {
                     showHistory.toggle()
                 }
