@@ -21,12 +21,10 @@ struct HeaderView: View {
                 ForEach(Exercise.exercises.indices, id: \.self) { index in
                     let fill = index == selectedTab ? ".fill" : ""
                     Image(systemName: "\(index + 1).circle\(fill)")
+                        .onTapGesture {
+                            selectedTab = index
+                        }
                 }
-//                Image(systemName: "hand.wave")
-//                Image(systemName: "1.circle")
-//                Image(systemName: "2.circle")
-//                Image(systemName: "3.circle")
-//                Image(systemName: "4.circle")
             }
             .font(.title2)
         }
