@@ -56,7 +56,8 @@ struct ExerciseView: View {
                     startButton
                     doneButton
                         .sheet(isPresented: $showSuccess) {
-                            SuccessView()
+                            SuccessView(selectedTab: $selectedTab)
+                                .presentationDetents([.medium, .large])
                         }
                 }
                 .font(.title3)
